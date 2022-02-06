@@ -15,6 +15,7 @@
   <body> 
 
     <header>
+
       <nav class="navbar">
         <div class="logo">
           <img
@@ -32,7 +33,6 @@
             <li><a href="/" class="nav-link">Animes</a></li>
             <li><a href="/" class="nav-link">No Cinema</a></li>
             <li><a href="/" class="nav-link">Na TV</a></li>
-            <li><a href="/" class="nav-link">Populares</a>M</li>
           </ul>
 
           <form  id="form">
@@ -48,101 +48,44 @@
         <source src="../src/assets/video/d1-filmes.mp4" type="video/mp4"/>
       </video>
     </section>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
 
-    <main id="main">
-      <div class="filme aa">
-          <img src="../src/assets/img/capas/encareamusica.jpg" alt="Bm">
-          <div class="filme-info">
-              <h5>Encare a Música</h5>
-              <span class="text-success">9.8</span>
-          </div>
-          <div class="sinopse">
-              <h5>Sinopse</h5>
-              Ted e Bill atingiram a meia idade, fazendo com que suas preocupações se virem para as suas famílias e outras responsabilidades da vida adulta. Depois de anos lidando com a frustração de ainda não terem escrito a melhor música de todos os tempos, eles recebem a visita de um homem do futuro e descobrem que apenas uma música criada por eles pode salvar o mundo.
-          </div>
-      </div>
+    <main class="container">
+      <div class="container-item-1 item-1">
+        <div class="">
 
-      <div class="filme ab">
-          <img src="../src/assets/img/capas/acabana.jpg" alt="Bm">
-          <div class="filme-info">
-              <h5>A Cabana</h5>
-              <span class="text-success">9.6</span>
-          </div>
-          <div class="sinopse">
-              <h5>Sinopse</h5>
-              Um homem vive atormentado após perder a sua filha mais nova, cujo corpo nunca foi encontrado, mas sinais de que ela teria sido violentada e assassinada são encontrados em uma cabana nas montanhas. Anos depois da tragédia, ele recebe um chamado misterioso para retornar a esse local, onde ele vai receber uma lição de vida.
-          </div>
-      </div>
+          <div class="text-carousel">
+          <p>Populares &#x1F525;</p>
+        </div>
+  <div class="carousel">
+    <div class="carouselbox">
 
-      <div class="filme ac">
-          <img src="../src/assets/img/capas/umportoseguro.jpg" alt="Bm">
-          <div class="filme-info">
-              <h5>Um Porto Seguro</h5>
-              <span class="text-success">8.2</span>
-          </div>
-          <div class="sinopse">
-              <h5>Sinopse</h5>
-              Uma mulher misteriosa se muda para uma pequena cidade e recomeça sua vida. Apesar da moça estar determinada a não formar laços afetivos na nova cidade, ela não consegue cumprir esse objetivo e acaba levantando questionamentos sobre seu passado, que esconde um terrível segredo que continua assombrando a sua vida.
-          </div>
-      </div>
+    </div>
 
-      <div class="filme ad">
-          <img src="../src/assets/img/capas/mulan.jpg" alt="Bm">
-          <div class="filme-info">
-              <h5>Mulan</h5>
-              <span class="text-warning">7.2</span>
-          </div>
-          <div class="sinopse">
-              <h5>Sinopse</h5>
-              Para salvar seu pai doente de servir no Exército Imperial, uma jovem destemida se disfarça de homem para lutar contra os invasores do norte da China.
-          </div>
-      </div>
+    <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><</a>
+    <a class="switchRight sliderButton" onclick="sliderScrollRight()">></a>
+  </div>
 
-      <div class="filme ae">
-          <img src="../src/assets/img/capas/infiltrado.jpg" alt="Bm">
-          <div class="filme-info">
-              <h5>Infiltrado</h5>
-              <span class="text-warning">6.8</span>
-          </div>
-          <div class="sinopse">
-              <h5>Sinopse</h5>
-              Harry, conhecido apenas como H, é um homem misterioso que trabalha para uma empresa de carros-fortes e movimenta grandes quantias de dinheiro pela cidade de Los Angeles. Quando, ao impedir um assalto, ele surpreende a todos com suas habilidades de combate, suas verdadeiras intenções começam a ser questionadas e um plano maior é revelado.
-          </div>
-      </div>
 
-    <script> 
-    
-    const show = (users) => {
-      let output = ''
+  </br>
+  </br>
+
+  <div class="text-carousela">
+    <p>No Cinema &#x1F4FD;</p>
+  </div>
+  <div class="carousel-a">
+    <div class="a-carouselbox">
+
+    </div>
+
+    <a class="aswitchLeft sliderButton" ><</a>
+    <a class="aswitchRight sliderButton" >></a>
+  </div>
+
+</div>
+</div>
+</main>
   
-      for(let user of users) {
-        output += `<li>${user.name}</li>`
-      }
-  
-     document.querySelector("#lista-usuarios").innerHTML = output;
-    }
-  
-     const getContent = async() => {
-      try {
-        const response = await fetch('http://localhost:8000/')
-        //console.log(response)
-        const data = await response.json()
-  
-        show(data)
-  
-      } catch (error) {
-        console.log(error)
-      }  
-    }
-  
-    getContent();
-    </script>
-    <div id="root"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
