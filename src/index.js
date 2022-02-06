@@ -102,6 +102,54 @@ var ImagePadding1 = 20;
             scrollPerclick1 = 400;
         }
 
-
-        //usando de exemplo: https://github.com/asishgeorge/50Projects50Days/blob/master/Day17-MovieApp/script.js
-const searchURL = BASE_URL + '/search/movie?'+API_KEY;
+const sliders2 = document.querySelector(".b-carouselbox");
+var scrollPerclick2;
+var ImagePadding2 = 20;
+            
+    showMovieData2()
+        
+    var scrollAmountb = 0;
+        
+    function bsliderScrollLeft() {
+        sliders2.scrollTo({
+            top: 0,
+            left: (scrollAmountb -= scrollPerclick2),
+            behavior: "smooth"
+        });
+            
+            if (scrollAmountb < 0) {
+                scrollAmountb = 0
+            }
+        }
+            
+        function bsliderScrollRight() {
+            if (scrollAmountb <= sliders2.scrollWidth - sliders2.scrollWidth) {
+            sliders2.scrollTo({
+                top: 0,
+                left: (scrollAmountb += scrollPerclick2),
+                behavior: "smooth"
+            });
+        }
+        }
+            
+    async function showMovieData2() {
+        const bapi_key = "d5c137af53cf85d58907c1af93a391f5";
+                 
+            
+        var resulteb = await axios.get(
+            "https://api.themoviedb.org/3/discover/tv?api_key=" + 
+            bapi_key +
+            "&primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22"
+            );
+        
+            resulteb = resulteb.data.results;
+            
+            resulteb.map(function (cur, index) {
+                sliders2.insertAdjacentHTML(
+                    "beforeend",
+                    `<img class="img-${index} slider1-img" src="https://image.tmdb.org/t/p/w185/${cur.poster_path}" />`
+                );
+            });
+                
+            scrollPerclick2 = 400;
+        }

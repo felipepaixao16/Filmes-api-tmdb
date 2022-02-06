@@ -25,15 +25,17 @@
           />
         </div>
 
+        <nav id="navbaar">
         <div class="nav-menu">
           <ul class="nav-list ml-3">
             <li><a href="/" class="nav-link">Filmes</a></li>
             <li><a href="/" class="nav-link">Séries</a></li>
             <li><a href="/" class="nav-link">Desenhos</a></li>
             <li><a href="/" class="nav-link">Animes</a></li>
-            <li><a href="/" class="nav-link">No Cinema</a></li>
-            <li><a href="/" class="nav-link">Na TV</a></li>
+            <li><a href="#rolecinema" class="nav-link">Cinema</a></li>
+            <li><a href="#roletv" class="nav-link">TV</a></li>
           </ul>
+        </nav>
 
           <form  id="form">
             <input type="text" placeholder="Search" id="search" class="search">
@@ -69,6 +71,7 @@
   </br>
   </br>
 
+  <header id="rolecinema">
   <div class="text-carousela">
     <p>No Cinema &#x1F4FD;</p>
   </div>
@@ -80,10 +83,36 @@
     <a class="aswitchLeft sliderButton" ><</a>
     <a class="aswitchRight sliderButton" >></a>
   </div>
+</header>
+
+</br>
+</br>
+
+<header id="roletv">
+<div class="text-carouselb">
+  <p>Na TV &#x1F4FA;</p>
+</div>
+<div class="carousel-b">
+  <div class="b-carouselbox">
+
+  </div>
+
+  <a class="bswitchLeft sliderButton" ><</a>
+  <a class="bswitchRight sliderButton" >></a>
+</div>
+</header>
+
+</br>
+</br>
 
 </div>
 </div>
 </main>
+
+<footer id="footer">
+  Projeto desenvolvido por Felipe Paixão <br />
+  API de filmes utilizada TMDB
+</footer>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.js"></script>
     <script src="./src/index.js"></script>

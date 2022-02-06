@@ -1,8 +1,8 @@
 *,
 *::after,
 *::before {
-  padding: 0;
-  margin: 0px 0px 25px;
+  padding: 0px 5px;
+  margin: 0px 0px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Mukta", sans-serif;
@@ -10,7 +10,7 @@
 
 body {
   width: 100%;
-  height: 150vh;
+  height: 200vh;
   background-color: #0a0c10;
 }
 
@@ -18,7 +18,7 @@ img,
 svg {
   padding: 0px 0px 0px;
   display: block;
-  width: 65%;
+  width: 120%;
 }
 
 a {
@@ -128,7 +128,7 @@ p {
 
 .carousel .switchRight {
   position: absolute;
-  right: -105px;
+  right: -65px;
 } 
 
 .carouselbox {
@@ -192,7 +192,7 @@ p {
 
 .carousel-a .aswitchRight {
   position: absolute;
-  right: -105px;
+  right: -65px;
 } 
 
 .a-carouselbox {
@@ -223,6 +223,70 @@ p {
   z-index: 5;
 }
 
+.text-carouselb {
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+}
+
+.carousel-b {
+  height: 250px;
+  width: 37%;
+  position: relative;
+}
+
+.carousel-b .bswitchLeft,
+.carousel-b .bswitchRight {
+  color: #eee;
+  font-weight: bold;
+  height: 100%;
+  width: 47px;
+  line-height: 250px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #0e0e42e8;
+  font-family: sans-serif;
+  top: 0;
+  z-index: 3;
+}
+
+.carousel-b .bswitchLeft {
+  position: absolute;
+  left: -47px;
+}
+
+.carousel-b .bswitchRight {
+  position: absolute;
+  right: -65px;
+} 
+
+.b-carouselbox {
+  height: 250px;
+  width: 2800px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+}
+
+.b-carouselbox img {
+  min-width: 147px;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+.b-carouselbox img:hover {
+  transform: scale(1.4);
+  z-index: 5;
+}
+
 header {
   width: 100%;
   padding-top: 1rem;
@@ -230,7 +294,7 @@ header {
 
 .navbar {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: -1rem;
   padding: 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,8 +308,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200%;
-  padding: 0px 0px 0px 350px;
+  width: 100%;
+  padding: 47px 62px 1px 311px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -333,4 +397,9 @@ header {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+#footer {
+  background: rgba(34, 34, 34, 0.178);
+  color: rgba(238, 238, 238, 0.842);
+  padding: 30px;
+  text-align: center;
+}
