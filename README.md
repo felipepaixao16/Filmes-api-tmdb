@@ -8,6 +8,7 @@ Desenvolver o back-end em NodeJS.
 Utilizar o banco de dados MySQL.
 Criar as próprias APIs para consumir as APIs da TMDB.
 
+Desploy do Projeto: https://felipepaixao16.github.io/Filmes-api-tmdb/
 
 Para iniciar o site, basta inserir o comando: npm start na pasta raiz do projeto.
 
