@@ -1,7 +1,7 @@
 *,
 *::after,
 *::before {
-  padding: 0px 5px;
+  padding: 0px;
   margin: 0px 0px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -33,6 +33,12 @@ p {
   line-height: 140%;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 .search{
     position: 1rem;
     background-color: transparent;
@@ -50,15 +56,11 @@ p {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 940px;
   margin: 0 auto;
   padding: 0 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -70,15 +72,9 @@ p {
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-video::after {
@@ -91,9 +87,6 @@ p {
   background: linear-gradient(101.47deg, #0a0c10de 26.38%, rgba(10, 12, 16, 0.8) 50.07%, #0a0c10e0 73.17%);
 }
 
-.container {
-  margin: -10px 116px 39px 71px;
-}
 
 .text-carousel {
   font-family: "Mukta", sans-serif;
@@ -122,18 +115,20 @@ p {
 }
 
 .carousel .switchLeft {
+  cursor: pointer;
   position: absolute;
   left: -47px;
 }
 
 .carousel .switchRight {
+  cursor: pointer;
   position: absolute;
-  right: -65px;
+  right: 140px;
 } 
 
 .carouselbox {
   height: 250px;
-  width: 2800px;
+  width: 2850px;
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
@@ -186,13 +181,15 @@ p {
 }
 
 .carousel-a .aswitchLeft {
+  cursor: pointer;
   position: absolute;
   left: -47px;
 }
 
 .carousel-a .aswitchRight {
+  cursor: pointer;
   position: absolute;
-  right: -65px;
+  right: 140px;
 } 
 
 .a-carouselbox {
@@ -200,7 +197,6 @@ p {
   width: 2800px;
   overflow: hidden;
   white-space: nowrap;
-  display: inline-block;
   text-align: center;
   padding-bottom: 10px !important;
   display: flex;
@@ -250,13 +246,15 @@ p {
 }
 
 .carousel-b .bswitchLeft {
+  cursor: pointer;
   position: absolute;
   left: -47px;
 }
 
 .carousel-b .bswitchRight {
+  cursor: pointer;
   position: absolute;
-  right: -65px;
+  right: 140px;
 } 
 
 .b-carouselbox {
@@ -365,6 +363,17 @@ header {
 
 .search::placeholder{
     color: #87889b;
+}
+
+.btn-modal {
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 15px;
+  color: #b5b6b8;
+  background: #3012b6;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
 
 @-webkit-keyframes modal {

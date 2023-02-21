@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="./src/index.css" />
     <title>Filmes-D1</title>
   </head>
   <body> 
@@ -19,7 +19,7 @@
       <nav class="navbar">
         <div class="logo">
           <img
-            src="../src/assets/img/logo/d1-filmes-unscreen.gif"
+            src="./src/assets/img/logo/d1-filmes-unscreen.gif"
             alt="logo-d1"
             onload="SVGInject(this)"
           />
@@ -28,10 +28,10 @@
         <nav id="navbaar">
         <div class="nav-menu">
           <ul class="nav-list ml-3">
-            <li><a href="/" class="nav-link">Filmes</a></li>
-            <li><a href="/" class="nav-link">Séries</a></li>
-            <li><a href="/" class="nav-link">Desenhos</a></li>
-            <li><a href="/" class="nav-link">Animes</a></li>
+            <li><a href="#" class="nav-link">Filmes</a></li>
+            <li><a href="#" class="nav-link">Séries</a></li>
+            <li><a href="#" class="nav-link">Desenhos</a></li>
+            <li><a href="#" class="nav-link">Animes</a></li>
             <li><a href="#rolecinema" class="nav-link">Cinema</a></li>
             <li><a href="#roletv" class="nav-link">TV</a></li>
           </ul>
@@ -40,14 +40,14 @@
           <form  id="form">
             <input type="text" placeholder="Search" id="search" class="search">
         </form>
-        <button class="btn-modal"></button>
+        <button type="submit" class="btn-modal">Buscar</button>
 
       </nav>
     </header>
 
     <section class="bg-video">
       <video class="video" autoplay muted loop>
-        <source src="../src/assets/video/d1-filmes.mp4" type="video/mp4"/>
+        <source src="./src/assets/video/d1-filmes.mp4" type="video/mp4"/>
       </video>
     </section>
 
@@ -68,8 +68,8 @@
   </div>
 
 
-  </br>
-  </br>
+  <br>
+  <br>
 
   <header id="rolecinema">
   <div class="text-carousela">
@@ -80,13 +80,13 @@
 
     </div>
 
-    <a class="aswitchLeft sliderButton" ><</a>
-    <a class="aswitchRight sliderButton" >></a>
+    <a class="aswitchLeft sliderButton" onclick="asliderScrollLeft()"><</a>
+    <a class="aswitchRight sliderButton" onclick="asliderScrollRight()">></a>
   </div>
 </header>
 
-</br>
-</br>
+<br>
+<br>
 
 <header id="roletv">
 <div class="text-carouselb">
@@ -97,13 +97,13 @@
 
   </div>
 
-  <a class="bswitchLeft sliderButton" ><</a>
-  <a class="bswitchRight sliderButton" >></a>
+  <a class="bswitchLeft sliderButton" onclick="bsliderScrollLeft()"><</a>
+  <a class="bswitchRight sliderButton" onclick="bsliderScrollRight()">></a>
 </div>
 </header>
 
-</br>
-</br>
+<br>
+<br>
 
 </div>
 </div>
@@ -115,6 +115,6 @@
 </footer>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.js"></script>
-    <script src="./src/index.js"></script>
+    <script src="./src/indexconfig.js"></script>
   </body>
 </html>
